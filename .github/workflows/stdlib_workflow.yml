@@ -36,7 +36,7 @@ jobs:
           testsInput='${{ github.event.inputs.tests }}'
           if [[ -z $testsInput ]]; then
             repoName=${{ github.event.inputs.repo-name }}
-            git clone https://github.com/ballerina-platform/$repoName
+            git clone https://github.com/kaneeldias/$repoName
             if [[ -z $repoName ]]; then
               echo "Github repo should be in `ballerina-platform` org"
               exit 1
